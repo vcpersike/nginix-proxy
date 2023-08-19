@@ -10,9 +10,6 @@ services:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
 
-    networks:
-      - vpsnet
-
 networks:
-  proxy_manager:
-    name: vpsnet
+  vpsnet:
+    external: true
