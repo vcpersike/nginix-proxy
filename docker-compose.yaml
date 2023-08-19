@@ -11,8 +11,8 @@ services:
       - ./letsencrypt:/etc/letsencrypt
 
     networks:
-      - proxy_manager
+      - vpsnet
 
 networks:
   proxy_manager:
-    name: proxy_manager
+    name: vpsnet
